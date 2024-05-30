@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .link {
+            margin: 20px;
+            display: block;
+            font-size: 20px;
+            color: blue;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Redirect Page</h1>
+    <p>Click on any link below to be redirected to another page:</p>
+    
+    <div class="link" onclick="redirectTo('https://www.example.com/page1')">Go to Page 1</div>
+    <div class="link" onclick="redirectTo('https://www.example.com/page2')">Go to Page 2</div>
+    <div class="link" onclick="redirectTo('https://www.example.com/page3')">Go to Page 3</div>
+
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
